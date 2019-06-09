@@ -787,7 +787,7 @@ button,input,select,textarea,label{
 	min-height:100vh
 }
 .boxed-container{
-	max-width:1440px;
+	max-width:100%;
 	margin:0 auto;
 	box-shadow:0 16px 48px #E3E7EB
 }
@@ -817,6 +817,7 @@ main{
 	width: 100%
 	letter-spacing:0px
 }
+
 .site-footer::before{
 	content:'';
 	position:absolute;
@@ -882,3 +883,7 @@ main{
 		margin-bottom:0
 }
 }
+
+
+/*Input Box Below*/
+

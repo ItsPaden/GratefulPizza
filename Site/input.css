@@ -1,0 +1,107 @@
+.box {
+  margin-bottom: 24px;
+  padding: 24px;
+  text-align: center;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.box-input {
+  color: #368227;
+}
+
+.box-output {
+  color: white;
+  background: #345d71;
+  padding: 48px;
+}
+
+@media (max-width: 540px) {
+  .number-container {
+    display: block;
+    margin: 24px 0;
+  }
+}
+
+.number-input,
+.hash,
+.date-output {
+  font-family: inherit;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+.hash {
+  margin-right: -0.2em;
+  font-size: 1.5em;
+  color: #368227
+}
+
+.number-input {
+  width: 150px;
+  text-align: center;
+  padding: 0 0 0 0em;
+  box-sizing: border-box;
+  margin: -2 0;
+  font-size: 2.5em;
+  color: inherit;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #368227;
+  outline: none;
+  -moz-appearance: textfield;
+}
+.number-input::-webkit-inner-spin-button {
+  display: none;
+}
+.number-input:before {
+  content: '$';
+}
+.number-input::-webkit-input-placeholder {
+  opacity: 0.2;
+  color: inherit;
+}
+.number-input:-ms-input-placeholder {
+  opacity: 0.2;
+  color: inherit;
+}
+.number-input::-ms-input-placeholder {
+  opacity: 0.2;
+  color: inherit;
+}
+.number-input::placeholder {
+  opacity: 0.2;
+  color: inherit;
+}
+
+.output {
+  display: none;
+}
+
+.date-container {
+  margin-bottom: 24px;
+}
+
+.date-output {
+  margin-left: 0.3em;
+  font-size: 2.2em;
+  font-weight: 700;
+  vertical-align: -20%;
+}
+@media (max-width: 540px) {
+  .date-output {
+    display: block;
+    margin: 24px 0;
+  }
+}
+
+.text-container {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.number-output,
+.days-output {
+  font-weight: 700;
+}
