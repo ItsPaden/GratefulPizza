@@ -614,11 +614,15 @@ button,input,select,textarea,label{
 .header-links a:not(.button):hover,.header-links a:not(.button):active{
 	color:#202B36
 }
+.logo {
+	width: 75%;
+}
 @media (min-width: 641px){
 	.site-header{
 		position:relative;
 		padding:24px 0
 }
+
 	.site-header::before{
 		top:-50%;
 		left:20%;
