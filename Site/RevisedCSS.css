@@ -887,7 +887,39 @@ main{
 		margin-bottom:0
 }
 }
+.money-remaining {
+	color: #368227;
+	font-size: 1.5em;
+}
 
+.pizzas-purchased {
+	color: #FF8000;
+	font-size: 1.5em;
+}
+
+.table-header {
+	background-color: #DCDCDC;
+}
+
+.payment-log table {
+	background-color: #F6F6F6;
+}
+
+.purchased-margins {
+	margin-top: 10%;
+}
+
+.payment-log th {
+	font-weight: normal;
+}
+
+th {
+	text-align: center;
+}
+
+.payment-log p {
+	bol: 
+}
 
 /*Input Box Below*/
 
