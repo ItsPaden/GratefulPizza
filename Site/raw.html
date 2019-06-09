@@ -53,12 +53,38 @@
                     <div class="hero-inner">
                         <h1 class="hero-title h2-mobile mt-0 is-revealing">Grateful Pizza</h1>
                         <p class="hero-paragraph is-revealing">Bringing food to those less fortunate</p>
-						<img src="PizzaMan.jpg" alt="PizzaMan" class="Center">
+						<img src="grateful.png" alt="PizzaMan" class="Center">
                         </div>
                     </div>
                 </div>
             </section>
 
+			<section class="hero text-center">
+				<div class="container-sm">
+					
+					<script src="https://www.paypal.com/sdk/js?client-id=AQelz7Yc4Rq--y3qmcgOtpfmgLSNU25n7OFhOCzRUbp3Y64gaz9FFHY_NQWQX3Aj8biv9LETysyIQIfs"></script>
+
+					<script>
+					  paypal.Buttons({
+						createOrder: function(data, actions) {
+						  // Set up the transaction
+						  return actions.order.create({
+							purchase_units: [{
+							  amount: {
+								value: '0.01'
+							  }
+							}]
+						  });
+						}
+					  }).render('#paypal-button-container');
+					</script>
+				  
+				  <div id="paypal-button-container"></div>
+  
+					
+				</div>
+			</section>
+			
             <section class="newsletter section">
                 <div class="container-sm">
                     <div class="newsletter-inner section-inner">
