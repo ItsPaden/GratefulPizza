@@ -922,5 +922,11 @@ th {
 	bol: 
 }
 
+.pizza-meter {
+	width:30%;
+	margin: auto auto;
+	padding-bottom: 20px;
+}
+
 /*Input Box Below*/
 
