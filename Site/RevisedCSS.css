@@ -358,6 +358,11 @@ h4,h5,h6,.h4,.h5,.h6{
 	line-height:24px;
 	letter-spacing:-0.1px
 }
+.arrow{
+		height:32px;
+		width:32px;
+		margin-top:240px
+}
 h1,h2,.h1,.h2{
 	margin-top:48px;
 	margin-bottom:16px
@@ -437,7 +442,6 @@ small{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
 }
 b,strong{
 	font-weight:700
