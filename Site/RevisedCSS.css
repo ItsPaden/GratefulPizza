@@ -938,5 +938,25 @@ th {
 .white {
 	background-color:white;
 }
-/*Input Box Below*/
 
+
+/*Shop Below*/
+div.gallery {
+  margin: auto auto;
+  display: inline-block;
+  width: 250px;
+}
+
+div.gallery:hover {
+  border: 1px solid #560d00;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
