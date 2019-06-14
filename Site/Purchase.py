@@ -2,10 +2,10 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import time
 
-#targetEmail = "rriedhammer@sheltersofsaratoga.org"
-targetEmail = "togagratefulpizza@gmail.com"
+#targetEmail = ""
+targetEmail = ""
 targetURL = "https://www.paypal.com/us/gifts/brands/domino-s-pizza"
-password = "PadenNick123!"
+password = ""
 
 options = webdriver.ChromeOptions()
 options.add_argument("user-data-dir=C:\\Users\\Paden\\AppData\\Local\\Google\\Chrome\\User Data\\Default")
