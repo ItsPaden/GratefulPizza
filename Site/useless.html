@@ -141,104 +141,22 @@
 			<section class="hero text-center payment-log white">
 				<h1 class="Center">- Statistics -</h1>
 				<div class="container-sm">
-					<p>We are <span class="money-remaining">$<?php
-					$link = mysqli_connect("localhost", "root", "PASSWORD_HERE", "payments");
-	 
-					// Check connection
-					if($link === false){
-						
-						die("ERROR: Could not connect. " . mysqli_connect_error());
-					}
-
-					// Attempt insert query execution
-					$sql = "SELECT SUM(amount) FROM donations";
-					$result = mysqli_query($link, $sql);
-					$row = mysqli_fetch_array($result, MYSQLI_NUM);
-					
-					$amount = $row[0];
-					$output = 15-($amount%15);
-					echo $output;
-					// Free resultset
-					mysqli_free_result($result);
-					// Close connection
-					mysqli_close($link);
-					
-					?>
-					
-					</span> away from Pizza! <i class="fas fa-pizza-slice"></i></p>
-					
+					<p>We are <span class="money-remaining">$10</span> away from Pizza! <i class="fas fa-pizza-slice"></i></p>
 					<table>
 						<tr class="table-header">
 							<th><strong>Date</th>
-							<th><strong>Name</th>
 							<th><strong>Amount</th>
 							<th><strong>Location</th>
 						</tr>
-					
-					<?php
-					$link = mysqli_connect("localhost", "root", "PASSWORD_HERE", "payments");
-					// Check connection
-					if($link === false){
-						
-						die("ERROR: Could not connect. " . mysqli_connect_error());
-					}
-
-					// Attempt insert query execution
-					$sql = "SELECT * FROM donations ORDER BY date ASC LIMIT 10";
-					$result = mysqli_query($link, $sql);
-					
-					
-					while($row = $result->fetch_array())
-					{
-						$rows[] = $row;
-					}
-					
-					foreach($rows as $row)
-					{
-						echo '<tr>';
-						echo '	<th> '.date("m-d-Y, g:i A", strtotime($row['date'])).' </th>';
-						echo '	<th> '.explode(" ", $row['name'])[0].' </th>';
-						echo '	<th> '.$row['amount'].' </th>';
-						echo '	<th> '.$row['country'].' </th>';
-						echo '</tr>';
-						
-					}	
-					
-					 
-					//Free resultset
-					mysqli_free_result($result);
-					 
-					// Close connection
-					mysqli_close($link);
-					
-					?>
+						<tr>
+							<th>6/9/2019</th>
+							<th>$5</th>
+							<th>New York</th>
+						</tr>
 					</table>
 				</div>
 				<div class="container-sm purchased-margins">
-					<p>We've purchased <span class="pizzas-purchased"><?php
-					$link = mysqli_connect("localhost", "root", "PASSWORD_HERE", "payments");
-	 
-					// Check connection
-					if($link === false){
-						
-						die("ERROR: Could not connect. " . mysqli_connect_error());
-					}
-
-					// Attempt insert query execution
-					$sql = "SELECT SUM(amount) FROM donations";
-					$result = mysqli_query($link, $sql);
-					$row = mysqli_fetch_array($result, MYSQLI_NUM);
-					
-					$amount = $row[0];
-					$output = floor($amount/15);
-					echo $output;
-					// Free resultset
-					mysqli_free_result($result);
-					// Close connection
-					mysqli_close($link);
-					
-					?>
-					</span> Pizza Gift Cards! <i class="fas fa-gift"></i></p>
+					<p>We've purchased <span class="pizzas-purchased">3</span> Pizza Gift Cards! <i class="fas fa-gift"></i></p>
 					<table>
 						<tr class="table-header">
 							<th><strong>Date</th>
